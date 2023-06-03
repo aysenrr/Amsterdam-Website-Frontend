@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. sayfa</title>
+    <link rel="stylesheet" href="newsayfa2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+    </label>
+    <label class="logo"><i class="fas fa-hiking">BON VOYAGE</i></label>
+    <ul>
+        <li><a href="mainpage.html">HOME</a></li>
+        <li><a href="amsterdam.html">ACTIVITIES</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+  </nav>
+  
+  <div class="banner"><div id="h3"><h3>WELCOME</h3></div></div>
+  <a class="weatherwidget-io" href="https://forecast7.com/en/52d374d90/amsterdam/" data-label_1="AMSTERDAM" data-label_2="WEATHER" data-theme="sky" data-basecolor="#5d2c09" >AMSTERDAM WEATHER</a>
+  <script>
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+  </script>
+  <div class="banner"><div id="h3"><h3>AMSTERDAM</h3></div></div>
+  
+  <div class="reservations">
+    <div class="booking">
+        <h2 style="text-align:center;"><i class="fa-solid fa-hotel"></i>HOTEL BOOKING<hr></h2>
+      <div class="name"> 
+        <input type="text" placeholder="NAME"> 
+      </div>
+      <div class="surname">
+          <input type="text" placeholder="SURNAME">
+      </div>
+      <div class="email">
+          <input type="text" placeholder="EMAIL">
+      </div>
+      <div class="phone number">
+          <input type="text" placeholder="PHONE NUMBER">
+      </div>
+      <div class="arrive">
+          <input type="text" placeholder="ARRIVE">
+      </div>
+      <div class="depart">
+          <input type="text" placeholder="DEPART">
+      </div>
+      <div class="people">
+        <i class="fa-solid fa-people"></i><input type="number" placeholder="PEOPLE">
+      </div>
+      <div class="bed" >
+          <input type="number" placeholder="BED">
+      </div>
+      <div class="room">
+          <input type="number" placeholder="ROOM">
+      </div>
+      <div class="button"><button>SEARCH</button></div>
+    </div>
+    <div class="ticket">
+        <h2 style="text-align: center;"><i class="fa-solid fa-plane-departure" ></i>PLANE TICKET <hr></h2>
+          <div class="name"> 
+              <input type="text" placeholder="NAME"> 
+            </div>
+            <div class="surname">
+                <input type="text" placeholder="SURNAME">
+            </div>
+            <div class="email">
+                <input type="text" placeholder="EMAIL">
+            </div>
+            <div class="phone number">
+                <input type="text" placeholder="PHONE NUMBER">
+            </div>
+            <div class="from">
+                <input type="text" placeholder="FROM">
+            </div>
+            <div class="to">
+                <input type="text" placeholder="TO">
+            </div>
+            <div class="people">
+                <input type="number" placeholder="PEOPLE">
+            </div>
+            <div class="seat" >
+                <input type="number" placeholder="SEAT">
+            </div>
+            <div class="time">
+                <input type="number" placeholder="TIME">
+            </div>
+            <div class="button"><button>SEARCH</button></div>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="cardcontainer">
+      <div class="card">
+        <div class="kutu1 kutu">
+          <div class="content">
+            <img src="https://images.pexels.com/photos/2184504/pexels-photo-2184504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="height: 470px;"alt="">
+            <h3></h3>
+          </div>
+        </div>
+        <div class="kutu2 kutu">
+          <div class="content">
+          <h1>HISTORY</h1>
+            <a href="#history-id">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cardcontainer">
+      <div class="card">
+        <div class="kutu1 kutu">
+          <div class="content">
+            <img src="https://images.pexels.com/photos/9792034/pexels-photo-9792034.jpeg?auto=compress&cs=tinysrgb&w=600" style="height: 470px;" alt="">
+            <h3></h3>
+          </div>
+        </div>
+        <div class="kutu2 kutu">
+          <div class="content">
+            <h1>NATURAL BEAUTIES</h1>
+            <a href="#places-id" >Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cardcontainer">
+      <div class="card">
+        <div class="kutu1 kutu">
+          <div class="content">
+            <img src="https://images.pexels.com/photos/5405596/pexels-photo-5405596.jpeg?auto=compress&cs=tinysrgb&w=600" style="height: 470px;" alt="">
+            <h3></h3>
+          </div>
+        </div>
+        <div class="kutu2 kutu">
+          <div class="content">
+            <h1>VISA</h1>
+            <a href="#visa-id">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="history" id="history-id">
+      <div class="history1">
+        
+        <img src="https://www.amsterdam.info/photos/content/presentation/20180605-amsterdam-dam-square-history-old-photo-1280.jpg" alt="">
+        <img src="https://s.inyourpocket.com/img/figure/2015-04/neam_hi_amsterdam_great_sluice1.jpg" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUdCFVuadhCGgrjeGff8Ei4BJAjluwSqmVlw&usqp=CAU" alt="">
+        <div class="historytext">
+          
+          <p><h1>HISTORY OF AMSTERDAM</h1>Amsterdam has a long and eventful history. The origins of the city lie in the 12th century, when fishermen living along the banks of the River Amstel built a bridge across the waterway near the IJ, which at the time was a large saltwater inlet. Wooden locks under the bridge served as a dam protecting the village from the rising IJ waters, which often flooded the early settlement. The mouth of the river Amstel, where the Damrak is now, formed a natural harbor, which became important for trading-exchange from the larger koggeships into the smaller ships that sailed the merchandise deeper into the hinterland.
+
+          The oldest document referring to the settlement of "Aemstelredamme" (Amsterdam) 'dam in the river Amstel' comes from a document dated 27 October 1275 CE. Inhabitants of the village were, by this document, exempted from paying a bridge toll in the County of Holland by Count Floris V.[1]
+          
+          Excavations between 2005 and 2012 found evidence that the origins of Amsterdam are much older than 'only' the twelfth century. During the construction of the Metro "Noord-Zuid lijn" archaeologists discovered, some 30 meters below street level, pole-axes, a stone hammer, and some pottery, all dating from the Neolithic era (New Stone Age). This would mean Amsterdam, or its predecessor would have seen human habitation since about 2600 BCE.</p></div>
+      </div>
+    </div>
+    <div class="places" id="places-id">
+      <h2>NATURAL BEAUTIES</h2>
+      <div class="places-">
+        <img src="https://a.cdn-hotels.com/gdcs/production151/d129/3c1b6e2c-298d-4ff0-875d-ac667b5a3303.jpg?impolicy=fcrop&w=1600&h=1066&q=medium" alt=""> 
+        <img src="https://a.cdn-hotels.com/gdcs/production191/d1221/ddd9be50-8b27-45ba-a070-b197c75bbb6e.jpg?impolicy=fcrop&w=1600&h=1066&q=medium" alt=""> 
+        <img src="https://a.cdn-hotels.com/gdcs/production57/d1587/6324d56c-1ee3-4fbd-9a16-ff915f9b9add.jpg?impolicy=fcrop&w=1600&h=1066&q=medium" alt=""> 
+      </div>
+    </div>
+    <div class="texts">
+      <div class="text1"><h4>Rijksmuseum Gardens</h4><p>Gardens are a collection of several different garden styles that are well-maintained and arranged to maximise their aesthetic appeal. The flora here consists of vibrant greenery and colourful blooming flowers depending on the time of year you visit.
+      </p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4310.135596045307!2d4.881129387720078!3d52.361156034206296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609eec1bb16e5%3A0xd54373ae6a408585!2sRijksmuseum%20Amsterdam!5e0!3m2!1str!2str!4v1652618681271!5m2!1str!2str" style="margin-top: 20px;" width="300" height="100" style="margin-top:23px; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      <div class="text2"><h4>Amsterdam Canals</h4>
+        <p>The Amsterdam canals are among the most iconic aspects of the entire city being classified as a UNESCO World Heritage Site. When you visit, you can enjoy the well-maintained walking paths along the sides, or you can venture directly through the water with a chartered boat tour.
+        </p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19487.507731006295!2d4.877032977588234!3d52.371535756312475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609c05b1b1103%3A0x21067a7298a3961a!2sAmsterdam&#39;daki%20kanallar!5e0!3m2!1str!2str!4v1652619102481!5m2!1str!2str" style="margin-top: 20px;" width="300" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="text3"><h4>Amsterdamse Bos</h4>
+   <p>Amsterdamse Bos is a landscape park that spans 1,000 hectares of space making it massive in scope and packed full of fun things to do. The park's aesthetic beauty is easy enough to appreciate thanks to the wide-open spaces and well-maintained walking.</p>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39021.795861502156!2d4.763092258203125!3d52.318502200000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5e1b1f2eb0961%3A0x8fb6f82a2bc45ab6!2sHet%20Amsterdamse%20Bos!5e0!3m2!1str!2str!4v1652618945918!5m2!1str!2str" style="margin-top: 20px;" width="300" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    
+  </div>
+  <div class="visa"id="visa-id">
+      <div class="visatext">
+     <h1> Visas for the Netherlands</h1>
+     <pre>
+     </pre>
+        If you travel to the Netherlands, you may need a visa. Whether you need a visa,
+      and which visa, depends among other things on your nationality. And whether you
+      want to stay in the Netherlands for shorter or longer than 90 days.
+    <pre>
+    </pre>
+      <h3>What types of visas are there?</h3>
+      <pre>
+      </pre>
+        Whether or not you need a visa depends on things like your nationality,destination
+      and length of stay. Read the visa pages to see if you need a visa and how you can apply for
+      <pre>
+      </pre>
+       <h5>Airport transit visa</h5>
+       If you are transferring to another flight at a Dutch airport,you might need an airport
+      transit visa.
+      <pre>
+      </pre>
+       <h5>Short-stay visa</h5>
+      A short-stay visa (Schengen visa) allows you to stay in theNetherlands for a maximum 
+      of 90 days. Besides the Netherlands, it is also valid in the other Schengen countries.
+      <pre>
+      </pre>
+      <h5>Long-stay visa</h5>
+      If you want to stay in the Netherlands for longer than 90 days, you might need a
+     long-stay visa. This is also called an authorisation for temporary stay (MVV).
+     <pre>
+     </pre>
+      <h5>Caribbean visa</h5>
+      If you are planning a trip to the Caribbean parts of the Kingdom of the Netherlands you
+     might need a Caribbean visa. This will allow you to visit Aruba, Bonaire, Curaçao,
+     Saba, St Eustatius and St Maarten.
+     <pre>
+     </pre>
+      <h5>Visa facilitation</h5>
+      If you want to travel to the Netherlands with a family member who is an EU,EEA or Swiss
+     national or join them there, you can apply for a visa facilitation.
+     <button><a href="https://www.netherlandsworldwide.nl/travel/visas-for-the-netherlands">FOR MORE</a></button>
+    </div>
+    <div class="picture">
+    </div>
+  </div> 
+  <div class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155959.8924297995!2d4.763878108967292!3d52.354582834316005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2sAmsterdam%2C%20Hollanda!5e0!3m2!1str!2str!4v1652624126472!5m2!1str!2str" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</body>
+</html>

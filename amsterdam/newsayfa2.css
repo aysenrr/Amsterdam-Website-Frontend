@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+nav{
+    height: 65px;
+    width: 100%;
+    background-color:rgb(86, 43, 17);
+    text-decoration: none;
+    box-sizing: border-box;
+    padding-top: 15px;
+    font-size: 18px;
+    z-index: 100;
+}
+nav.logo{
+    padding-top: 30px;
+    float: left;
+}
+label.logo{
+    color:white;
+    font-size: 24px;
+}
+nav a {
+    text-decoration: none;
+}
+nav ul{
+    float:right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: -10px 10px;
+}
+nav ul li a {
+    text-transform: uppercase;
+    padding: 2px 13px;
+    color: white;
+}
+nav a:hover{
+    background-color: rgb(192, 156, 109);
+    border-radius: 3px;
+    transition: .2s;
+}
+.checkbtn{
+    font-size: 24px;
+    float:right;
+    line-height: 50px;
+    margin-top: -10px;
+    margin-right:20px;
+    cursor:pointer;
+    display:none;
+}
+#check{
+    display: none;
+
+}
+@media(max-width:952px){
+    label.logo{
+        font-size: 24px;
+    }
+    nav ul li a{
+        font-size:  16px;
+    }
+}
+@media(max-width:858px){
+    .checkbtn{
+        display: inline-block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(192, 156, 109);
+        top: 50px;
+        text-align: center;
+        left:-100%;
+        transition: .5s all;
+        z-index: 100000;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    nav a:hover{
+        color:burlywood;
+        background-color: none;
+    }
+    #check:checked ~ul{
+        left:0;
+    }
+}
+@media(min-width:858px){
+    nav .logo{
+        margin-left: 50px;
+        float: left;
+    }
+}
+.banner{
+    display: flex; 
+    height: 215px;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 100px;
+    color: white;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b5/Amsterdam_banner.jpg);
+    background-size: 100% 100%;
+    justify-content: center;
+    padding: 30px;
+}
+.weatherwidget-io{
+    margin-top: 5px;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -4105px;
+    height: 675px;
+    background-color: #8E6E63;
+}
+.cardcontainer{
+    display: flex;
+}
+.kutu{
+    position: relative;
+    width: 350px;
+    height: 400px;
+    transition: .8s all;
+}
+.kutu1{
+    background-color: chocolate;
+    transform: translateY(200px);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.kutu1 .content img{
+    width: 350px;
+    height: 400;
+    border-radius: 10px;
+}
+.card:hover .kutu1{
+    transform: translateY(0);
+}
+.kutu2{
+    background-color: #a08a82;
+    transform: translateY(-200px);
+    padding: 50px;
+    border-radius: 10px;
+    height: 230px;
+    text-align: center;
+}
+.kutu2 .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    border:3px solid black;
+    background-color: #8E6E63;
+    margin: 10px;
+}
+.card:hover .kutu2{
+    transform: translateY(0);
+}
+.history{
+    width:100%;
+    background-color: #eff1d2;
+    background-size: 100% 100%;
+    position: relative;
+    padding: 20px;
+}
+.history1 img{
+    height: 40.5vh;
+    width: 400px;
+    flex-direction: column;
+    display: flex;
+    margin: 50px;
+}
+.historytext {
+    margin-top: -920px;;
+    margin-left: 550px;
+    margin-right:90px;
+    text-align: center;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.places{
+    width:100%;
+    height:780px;
+    background-color: #a5c570;
+    background-size: 100% 100%;
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.places- img{
+    width: 27vw;
+    height: 40vh;
+    justify-content: space-between;
+    margin: 20px;
+}
+.texts{
+    width: 100%;
+    height: 40vh;
+    justify-content: space-between;
+    margin-top: -330px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 50px 0 50px;
+}
+.text1{
+    margin-top: -80px;
+    width: 27vw;
+    padding: 0 20px 0 20px;
+}
+.text1 h4{
+    padding-bottom: 7px;
+    text-align: center;
+}
+.text2{
+    margin-top: -80px;
+    width: 27vw;
+    padding: 0 20px 0 20px;
+}
+.text2 h4{
+    padding-bottom: 7px;
+    text-align: center;
+}
+.text3{
+    margin-top: -80px;
+    width: 27vw;
+    padding: 0 20px 0 20px;
+}
+.text3 h4{
+    padding-bottom: 7px;
+    text-align: center;
+}
+.visa{
+    width:100%;
+    height:780px;
+    background-color: #7ba0a0;
+}
+.visatext{
+    height: 700px;
+    width: 700px;
+    float: right;
+    margin:50px;
+    font-size: 18px;
+}
+.visa h1{
+    text-align: center;
+}
+.picture{
+    background-image: url(https://images.pexels.com/photos/7235813/pexels-photo-7235813.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    height: 780px;
+    width: 470px;
+    background-color: #568080;
+    background-size: 100% 100%;
+    padding: 50px;
+}
+.reservations{
+    display: flex;
+    width: 100%;
+    height: 779px;
+    margin-top: 3330px;
+    justify-content: space-between;
+}
+.booking{
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-top: 0px;
+    border-radius: 9px;
+    padding: 30px;
+    border: 10px solid rgb(86, 43, 17);
+    border-radius: 9px;
+    background-color:#8E6E63;
+    position: relative;
+    height: 600px;
+}
+.booking input:hover{
+    border: 3px solid rgb(86, 43, 17);
+}
+.name input{
+    height: 40px;
+    width: 400px;
+    margin: 5px;
+}
+.surname input{
+    height: 40px;
+    width: 400px;
+    margin: 5px;
+}
+.email input{
+    height: 40px;
+    width: 400px;
+    margin: 5px;
+}
+.phone input{
+    height: 40px;
+    width: 400px;
+    margin: 5px;
+}
+.arrive input{
+    height: 40px;
+    width: 400px;
+    margin: 5px;
+}
+.depart input{
+    height: 40px;
+    width: 400px;
+    margin: 5px;
+}
+.people input{
+    height: 40px;
+    width: 400px;
+    margin: 5px; 
+}
+.room input{
+    height: 40px;
+    width: 400px;
+    margin: 5px;
+}
+.bed input{
+    height: 40px;
+    width: 400px;
+    margin: 5px;
+}
+.ticket{
+    margin-bottom: 50px;
+    margin-top: 0px;
+    margin-right: 100px;
+    border-radius: 9px;
+    padding: 50px;
+    border: 10px solid rgb(86, 43, 17);
+    border-radius: 9px;
+    background-color:#8E6E63;
+    position: relative;
+    height: 600px;
+}
+.ticket input:hover{
+    border: 3px solid rgb(86, 43, 17);
+}
+.from input{
+    height: 40px;
+    width: 400px;
+    margin: 5px;
+}
+.to input{
+    height: 40px;
+    width: 400px;
+    margin: 5px;
+}
+.seat input{
+    height: 40px;
+    width: 400px;
+    margin: 5px;
+}
+.time input{
+    height: 40px;
+    width: 400px;
+    margin: 5px;
+}
+.button button{
+    margin-left: 170px;
+    margin-top: 10px;
+    color: white;
+    background-color: #8E6E63;
+    padding: 10px;
+}
+.location{
+margin-top: 820px;
+}
